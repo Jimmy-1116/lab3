@@ -3,6 +3,18 @@
 long calculate_factorial(int number )
 {
     // TODO: write your code here
+    if (number < 1 || number > 20)
+    {
+        return -1;
+    }
+    int i = 1;
+    long factorial = 1;
+    while (i <= number)
+    {
+        factorial *= i;
+        i++;
+    }
+    return factorial;
 }
 
 // DO NOT change the code below
